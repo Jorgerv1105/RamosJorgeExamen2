@@ -3,48 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RamosJorgeExamen2.Views.About"
              Title="About">
-    <Grid>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
+    <Grid Padding="20"
+              RowDefinitions="Auto,Auto"
+              ColumnDefinitions="*,*"
+              RowSpacing="15"
+              ColumnSpacing="15">
 
+        <Frame Grid.Row="0" Grid.Column="0"
+                   BackgroundColor="White"
+                   CornerRadius="10"
+                   Padding="15"
+                   HasShadow="True">
+            <StackLayout>
+                <Label Text="Nombre:" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                <Label Text="Jorge Ramos" FontSize="16" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
 
-        <BoxView Color="Green" />
-        <Label HorizontalOptions="Center"
-               VerticalOptions="Center" 
-               Text="Nombre:Jorge Ramos"/>
+        <Frame Grid.Row="0" Grid.Column="1"
+                   BackgroundColor="White"
+                   CornerRadius="10"
+                   Padding="15"
+                   HasShadow="True">
+            <StackLayout>
+                <Label Text="Fecha:" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                <Label Text="11/05/2003" FontSize="16" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
 
-        <BoxView Grid.Column="1"
-                 Color="Blue" />
-        <Label Grid.Column="1"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" 
-               Text="Fecha:02/06/2025"/>
+        <Frame Grid.Row="1" Grid.Column="0"
+                   BackgroundColor="White"
+                   CornerRadius="10"
+                   Padding="15"
+                   HasShadow="True">
+            <StackLayout>
+                <Label Text="Intereses:" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                <Label Text="Fútbol, Gym" FontSize="16" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
 
-        <BoxView Grid.Row="1"
-                 Color="Teal" />
-        <Label Grid.Row="1"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               Text="Intereses: Programación"/>
-
-        <BoxView Grid.Row="1"
-                 Grid.Column="1"
-                 Color="Purple" />
-        <Label Grid.Row="1"
-               Grid.Column="1"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               Text="Version:1.0"/>
-
-
-
-
+        <Frame Grid.Row="1" Grid.Column="1"
+                   BackgroundColor="White"
+                   CornerRadius="10"
+                   Padding="15"
+                   HasShadow="True">
+            <StackLayout>
+                <Label Text="Versión de App:" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                <Label Text="1.0" FontSize="16" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
     </Grid>
 </ContentPage>
