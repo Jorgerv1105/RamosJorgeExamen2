@@ -3,10 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RamosJorgeExamen2.Views.About"
              Title="About">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+        <BoxView Color="Green" />
+        <Label HorizontalOptions="Center"
+               VerticalOptions="Center" 
+               Text="Nombre:Jorge Ramos"/>
+
+        <BoxView Grid.Column="1"
+                 Color="Blue" />
+        <Label Grid.Column="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" 
+               Text="Fecha:02/06/2025"/>
+
+        <BoxView Grid.Row="1"
+                 Color="Teal" />
+        <Label Grid.Row="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Text="Intereses: Programación"/>
+
+        <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="Purple" />
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Text="Version:1.0"/>
+
+
+
+
+    </Grid>
 </ContentPage>
