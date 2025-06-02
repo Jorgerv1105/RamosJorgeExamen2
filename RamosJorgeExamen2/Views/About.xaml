@@ -38,7 +38,7 @@
                    HasShadow="True">
             <StackLayout>
                 <Label Text="Intereses:" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
-                <Label Text="Fútbol, Gym" FontSize="16" TextColor="Black"/>
+                <Label Text="Fútbol y Gym" FontSize="16" TextColor="Black"/>
             </StackLayout>
         </Frame>
 
