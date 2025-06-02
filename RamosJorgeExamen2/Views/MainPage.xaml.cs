@@ -1,24 +1,27 @@
-﻿namespace RamosJorgeExamen2
+﻿using RamosJorgeExamen2.Views;
+
+namespace RamosJorgeExamen2
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+
 
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+
+        private void Chistes_Clicked(object sender, EventArgs e)
         {
-            count++;
+            Navigation.PushAsync(new Chistes());
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void About_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new About());
+
         }
     }
 
